@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Snake Game</title>
+    <title>Arji Ganteng</title>
   </head>
   <style>
     canvas {
@@ -29,7 +29,7 @@
       width="400"
       height="400"
       id="game"
-      style="background-color: palegreen"
+      style="background-color: antiquewhite"
     ></canvas>
   </body>
 
@@ -118,11 +118,11 @@
       }
 
       // draw apple
-      ctx.fillStyle = "yellow";
+      ctx.fillStyle = "orange";
       ctx.fillRect(apple.x, apple.y, grid - 1, grid - 1);
 
       // draw snake one cell at a time
-      ctx.fillStyle = "blue";
+      ctx.fillStyle = "green";
       snake.cells.forEach(function (cell, index) {
         // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is
         ctx.fillRect(cell.x, cell.y, grid - 1, grid - 1);
